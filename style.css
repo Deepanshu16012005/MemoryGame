@@ -45,7 +45,6 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Card Colors */
 .red {
     background-color: #e74c3c;
 }
@@ -59,7 +58,6 @@
     background-color: #f1c40f;
 }
 
-/* Hover and Active Effects */
 .card:hover {
     transform: scale(1.05);
     opacity: 0.9;
@@ -69,7 +67,6 @@
     transform: scale(0.95);
 }
 
-/* Blink Effect (can be triggered from JS) */
 .blink {
     animation: blink 0.5s ease;
 }
@@ -79,7 +76,6 @@
     50% { opacity: 0.3; }
 }
 
-/* Restart Button */
 .Restart-button {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
