@@ -2,8 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 .wrapper{
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -12,11 +14,13 @@
     min-height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+    color: white;
 }
 .heading{
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    
 }
 .description{
     font-size: 1.125rem;
@@ -32,6 +36,67 @@
     gap: 4rem;
     margin-bottom: 2rem;
 }
-.card{
-    
+.card {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Card Colors */
+.red {
+    background-color: #e74c3c;
+}
+.blue {
+    background-color: #3498db;
+}
+.green {
+    background-color: #2ecc71;
+}
+.yellow {
+    background-color: #f1c40f;
+}
+
+/* Hover and Active Effects */
+.card:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.card:active {
+    transform: scale(0.95);
+}
+
+/* Blink Effect (can be triggered from JS) */
+.blink {
+    animation: blink 0.5s ease;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+/* Restart Button */
+.Restart-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 12px 30px;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Restart-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.Restart-button:active {
+    transform: scale(0.95);
 }
