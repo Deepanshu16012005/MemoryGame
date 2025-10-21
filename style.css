@@ -33,7 +33,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 4rem;
+    gap: 3rem;
     margin-bottom: 2rem;
 }
 .card {
@@ -75,8 +75,14 @@
     0%, 100% { opacity: 1; }
     50% { opacity: 0.3; }
 }
-
-.Restart-button {
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  gap: 0.8rem;           
+  margin-top: 1rem;
+}
+.Restart-button, .Highscore-button {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
     font-size: 1rem;
@@ -88,11 +94,11 @@
     transition: all 0.3s ease;
 }
 
-.Restart-button:hover {
+.Restart-button:hover,.Highscore-button:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: scale(1.05);
 }
 
-.Restart-button:active {
+.Restart-button:active,.Highscore-button:active {
     transform: scale(0.95);
 }

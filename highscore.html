@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Blink - High Score</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="data.js" defer></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+      color: white;
+      text-align: center;
+    }
+    .highscore-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    .score {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 1rem;
+      color: #ffeb3b;
+    }
+    a, button {
+      color: #00bcd4;
+      background: none;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1.5rem;
+      display: inline-block;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    button:hover, a:hover {
+      color: #fff;
+    }
+    @media (max-width: 600px) {
+      .score { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="highscore-box">
+    <h1>Highest Score</h1>
+    <div class="score" id="highScoreValue">Loading...</div>
+    <button id="resetButton">Reset High Score</button><br>
+    <a href="index.html">Back to Game</a>
+  </div>
+</body>
+</html>
